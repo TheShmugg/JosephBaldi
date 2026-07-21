@@ -1,6 +1,57 @@
+
+:root {
+    --primary-color: #ebefee;
+    --secondary-color: #ecd4b9;
+    --text-light: #b8805d;
+    --text-normal: #c96840;
+    --text-dark: #4a413c;
+}
+
 body {
     margin: 0;
-    background: lightcoral;
+    background: var(--secondary-color);
     text-align: center;
     text-decoration-color: azure;
+}
+
+@font-face {
+    font-family: 'BuiltTitling';
+    src: url('fonts/built titling rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CreatoDisplay';
+    src: url('fonts/CreatoDisplay-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    color: var(--text-dark);
+    font-family: "BuiltTitling", sans-serif;
+    font-size: 64px;
+}
+
+h2 {
+    color: var(--text-normal);
+    font-family: "CreatoDisplay", sans-serif;
+    font-size: 36px;
+}
+
+p {
+    color: var(--text-light);
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
 }
